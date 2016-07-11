@@ -1,0 +1,1093 @@
+[
+  {
+    "name": "Athletik",
+    "erstkosten": 50,
+    "startwert": "1",
+    "grund": [
+      "BN",
+      "BW",
+      "BS",
+      "Kr",
+      "Or",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Ma",
+      "Hx",
+      "Dr",
+      "Be",
+      "PH",
+      "PF",
+      "PW",
+      "Hl",
+      "Th",
+      "PM",
+      "PT"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "2",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "3",
+        "kosten": 250
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 500
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 1000
+      }
+    ]
+  },
+  {
+    "name": "Balancieren",
+    "erstkosten": 100,
+    "startwert": "12",
+    "grund": [
+      "As",
+      "BW",
+      "Gl",
+      "Se",
+      "Sp",
+      "Wa"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "13",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "14",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "15",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "16",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "17",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "18",
+        "kosten": 800
+      }
+    ]
+  },
+  {
+    "name": "Ballista bedienen",
+    "erstkosten": 100,
+    "grund": [
+      "Kr",
+      "Se",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "beidhändiger Kampf",
+    "erstkosten": 1500,
+    "startwert": "-4",
+    "grund": [
+      "BN",
+      "BW",
+      "BS",
+      "Gl",
+      "Kr",
+      "Se",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "-3",
+        "kosten": 1000
+      },
+      {
+        "erfolgswert": "-2",
+        "kosten": 3000
+      },
+      {
+        "erfolgswert": "-1",
+        "kosten": 4000
+      }
+    ]
+  },
+  {
+    "name": "Beredsamkeit",
+    "erstkosten": 200,
+    "startwert": "6",
+    "grund": [
+      "Ba",
+      "Gl",
+      "Hä",
+      "Se",
+      "PH"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "7",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 250
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 500
+      }
+    ]
+  },
+  {
+    "name": "Beschatten",
+    "erstkosten": 300,
+    "startwert": "6",
+    "grund": [
+      "As",
+      "BW",
+      "Sp",
+      "Wa"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "7",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "13",
+        "kosten": 400
+      }
+    ]
+  },
+  {
+    "name": "Bogen zu Pferd",
+    "erstkosten": 200,
+    "grund": [
+      "BS",
+      "Kr",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "Bogen vom Streitwagen",
+    "erstkosten": 200,
+    "grund": [
+      "BS",
+      "Kr",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "Fallen entdecken",
+    "erstkosten": 400,
+    "startwert": "2",
+    "grund": [
+      "As",
+      "Hä",
+      "Sp",
+      "Th"
+    ],
+    "ausnahme": [
+      "Kr",
+      "Or",
+      "Sö",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 1600
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 1600
+      }
+    ]
+  },
+  {
+    "name": "Fallen entschärfen",
+    "erstkosten": 400,
+    "startwert": "2",
+    "grund": [
+      "As",
+      "Sp"
+    ],
+    "ausnahme": [
+      "Kr",
+      "Or",
+      "Sö",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 1600
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 1600
+      }
+    ]
+  },
+  {
+    "name": "Fallenmechanik",
+    "erstkosten": 400,
+    "startwert": "2",
+    "grund": [
+      "As",
+      "Hä",
+      "Th"
+    ],
+    "ausnahme": [
+      "Kr",
+      "Or",
+      "Sö",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 1600
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 1600
+      }
+    ]
+  },
+  {
+    "name": "Fallenstellen",
+    "erstkosten": 400,
+    "startwert": "2",
+    "grund": [
+      "As",
+      "BN",
+      "BS",
+      "BW",
+      "Wa",
+      "Dr",
+      "Sc"
+    ],
+    "ausnahme": [
+      "Sp",
+      "Be",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Th"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 1600
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 1600
+      }
+    ]
+  },
+  {
+    "name": "Faustkampf",
+    "erstkosten": 500,
+    "grund": [
+      "BN",
+      "BS",
+      "Se",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Th"
+    ]
+  },
+  {
+    "name": "Gassenwissen",
+    "erstkosten": 200,
+    "startwert": "2",
+    "grund": [
+      "As",
+      "Ba",
+      "Hä",
+      "Gl",
+      "Se",
+      "Sp",
+      "Sö",
+      "Hx"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 250
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 250
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 500
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 500
+      }
+    ]
+  },
+  {
+    "name": "Geheimmechanismen öffnen",
+    "erstkosten": 400,
+    "startwert": "2",
+    "grund": [
+      "Gl",
+      "Sp",
+      "Th"
+    ],
+    "ausnahme": [
+      "BN",
+      "BS",
+      "BW",
+      "Kr",
+      "Or",
+      "Sö",
+      "Dr",
+      "Sc"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 800
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 1600
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 1600
+      }
+    ]
+  },
+  {
+    "name": "Geheimzeichen",
+    "erstkosten": 50,
+    "grund": [
+      "As",
+      "Ba",
+      "Hä",
+      "Sp",
+      "Dr",
+      "Hx",
+      "Th"
+    ],
+    "ausnahme": []
+  },
+  {
+    "name": "Geländelauf",
+    "erstkosten": 100,
+    "startwert": "12",
+    "grund": [
+      "BN",
+      "BS",
+      "BW",
+      "Gl",
+      "Sp",
+      "Wa",
+      "Sc"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "13",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "14",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "15",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "16",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "17",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "18",
+        "kosten": 800
+      }
+    ]
+  },
+  {
+    "name": "Geschäftstüchtigkeit",
+    "erstkosten": 4000,
+    "grund": [
+      "Hä"
+    ],
+    "ausnahme": []
+  },
+  {
+    "name": "Giftmischen",
+    "erstkosten": 100,
+    "startwert": "2",
+    "grund": [
+      "As",
+      "Hx",
+      "PT",
+      "Sc"
+    ],
+    "ausnahme": [
+      "Kr",
+      "Or",
+      "Hl",
+      "PF"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "3",
+        "kosten": 20
+      },
+      {
+        "erfolgswert": "4",
+        "kosten": 20
+      },
+      {
+        "erfolgswert": "5",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "11",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "12",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "13",
+        "kosten": 400
+      }
+    ]
+  },
+  {
+    "name": "Glücksspiel",
+    "erstkosten": 200,
+    "startwert": "15",
+    "grund": [
+      "Ba",
+      "Gl",
+      "Hä",
+      "Sö",
+      "Sp"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "5",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 200
+      }
+    ]
+  },
+  {
+    "name": "Himmelskunde",
+    "erstkosten": 50,
+    "grund": [
+      "Ba",
+      "BN",
+      "BS",
+      "Hä",
+      "Se",
+      "Wa",
+      "Sc"
+    ],
+    "ausnahme": []
+  },
+  {
+    "name": "Kampf in Vollrüstung",
+    "erstkosten": 4000,
+    "grund": [
+      "Kr",
+      "Sö"
+    ],
+    "ausnahme": [
+      "As",
+      "Ba",
+      "Sp",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "Kampf zu Pferd",
+    "erstkosten": 200,
+    "grund": [
+      "BN",
+      "BS",
+      "BW",
+      "Gl",
+      "Hä",
+      "Kr",
+      "Or",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Se",
+      "Sp",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "Kampf vom Streitwagen",
+    "erstkosten": 200,
+    "grund": [
+      "BN",
+      "BS",
+      "Kr",
+      "Sö"
+    ],
+    "ausnahme": [
+      "As",
+      "Se",
+      "Sp",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "Kampftaktik",
+    "erstkosten": 200,
+    "startwert": "1",
+    "grund": [
+      "Kr",
+      "Or",
+      "Se",
+      "Sö"
+    ],
+    "ausnahme": [
+      "As",
+      "Ba",
+      "Sp",
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "2",
+        "kosten": 1000
+      },
+      {
+        "erfolgswert": "3",
+        "kosten": 2000
+      }
+    ]
+  },
+  {
+    "name": "Kanufahren",
+    "erstkosten": 100,
+    "startwert": "12",
+    "grund": [
+      "BW",
+      "Hä",
+      "Se",
+      "Wa"
+    ],
+    "ausnahme": [],
+    "verbesserungen": [
+      {
+        "erfolgswert": "13",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "14",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "15",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "16",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "17",
+        "kosten": 400
+      },
+      {
+        "erfolgswert": "18",
+        "kosten": 800
+      }
+    ]
+  },
+  {
+    "name": "Katapult bedienen",
+    "erstkosten": 100,
+    "grund": [
+      "Kr",
+      "Se",
+      "Sö"
+    ],
+    "ausnahme": [
+      "Be",
+      "Dr",
+      "Hl",
+      "Hx",
+      "Ma",
+      "PF",
+      "PH",
+      "PK",
+      "PM",
+      "PT",
+      "PW",
+      "Sc",
+      "Th"
+    ]
+  },
+  {
+    "name": "Schleichen",
+    "erstkosten": 400,
+    "startwert": "4",
+    "grund": [
+      "As",
+      "Sp"
+    ],
+    "ausnahme": [
+      "Ma",
+      "PK"
+    ],
+    "verbesserungen": [
+      {
+        "erfolgswert": "5",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "6",
+        "kosten": 50
+      },
+      {
+        "erfolgswert": "7",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "8",
+        "kosten": 100
+      },
+      {
+        "erfolgswert": "9",
+        "kosten": 200
+      },
+      {
+        "erfolgswert": "10",
+        "kosten": 200
+      }
+    ]
+  }
+]

@@ -1,0 +1,124 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h3>
+                {{$ctrl.charakter.name}}, {{$ctrl.charakter.abenteurerTyp}} (Grad {{$ctrl.charakter.grad}})
+            </h3>
+        </div>
+        <div class="col-sm-6">
+            <h3>
+                <div class="col-sm-3">Summe</div>
+                <div class="col-sm-4"></div>
+                <div class="col-sm-2">{{$ctrl.getCostSum()}}</div>
+            </h3>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <table class="table table-condensed table-striped">
+                <caption class="text-left"><h4>Fähigkeiten</h4></caption>
+                <colgroup>
+                    <col class="col-md-3">
+                    <col class="col-md-1">
+                    <col class="col-md-1">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Kosten</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="faehigkeit in $ctrl.offeneFaehigkeiten | orderBy:'name'">
+                    <td>{{faehigkeit.name}}</td>
+                    <td>{{faehigkeit.berechneFaktor($ctrl.charakter.abenteurerTypKuerzel)*faehigkeit.erstkosten}}</td>
+                    <td><a class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"
+                                                                ng-click="$ctrl.lerneFaehigkeit(faehigkeit)"></span>
+                    </a></td>
+                </tr>
+                </tbody>
+            </table>
+            <table class="table table-condensed table-striped">
+                <caption class="text-left"><h4>Waffen</h4></caption>
+                <colgroup>
+                    <col class="col-md-3">
+                    <col class="col-md-1">
+                    <col class="col-md-1">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Kosten</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="waffe in $ctrl.offeneWaffen | orderBy:'name'">
+                    <td>{{waffe.name}}</td>
+                    <td>{{waffe.berechneFaktor($ctrl.charakter.abenteurerTypKuerzel)}}</td>
+                    <td><a class="btn btn-success btn-xs"><span class="glyphicon glyphicon-plus"
+                                                                ng-click="$ctrl.lerneWaffe(waffe)"></span>
+                    </a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-6">
+
+            <div class="row">
+                <h4>Lernliste</h4>
+            </div>
+            <div class="row"
+                 style="border-bottom: solid darkgray 1px"
+                 ng-repeat="lernfaehigkeit in $ctrl.charakter.lernen | orderBy:'name'">
+                <div class="col-sm-5">{{lernfaehigkeit.name}}</div>
+                <div class="col-sm-4">
+                    <table class="table table-condensed table-striped"
+                           ng-show="(lernfaehigkeit.offeneStufen.length>0) || (lernfaehigkeit.geplanteStufen.length>0)">
+                        <colgroup>
+                            <col class="col-md-1">
+                            <col class="col-md-1">
+                            <col class="col-md-2">
+                            <col class="col-md-2">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th>Wert</th>
+                            <th>Kosten</th>
+                            <th>Summe</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="stufe in lernfaehigkeit.geplanteStufen">
+                            <td>{{stufe.erfolgswert}}</td>
+                            <td>{{stufe.kosten*lernfaehigkeit.faktor}}</td>
+                            <td>{{lernfaehigkeit.berechneKosten(stufe)}}</td>
+                            <td><a class="btn btn-success btn-xs">
+                                <span class="glyphicon glyphicon-minus"
+                                      ng-click="lernfaehigkeit.entferneBis(stufe)"></span>
+                            </a></td>
+                        </tr>
+                        <tr ng-repeat="stufe in lernfaehigkeit.offeneStufen">
+                            <td>{{stufe.erfolgswert}}</td>
+                            <td>{{stufe.kosten*lernfaehigkeit.faktor}}</td>
+                            <td>{{lernfaehigkeit.berechneKosten(stufe)}}</td>
+                            <td><a class="btn btn-success btn-xs">
+                                <span class="glyphicon glyphicon-plus"
+                                      ng-click="lernfaehigkeit.lerneBis(stufe)"></span>
+                            </a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-sm-2">
+                    {{lernfaehigkeit.berechneGeplanteKosten()}}
+                </div>
+                <div class="col-sm-1">
+                    <a ng-hide="lernfaehigkeit.known" class="btn btn-success btn-xs"><span class="glyphicon glyphicon-minus"
+                                                                                    ng-click="$ctrl.entferneLernfaehigkeit(lernfaehigkeit)"></span>
+                    </a></div>
+            </div>
+        </div>
+    </div>
+</div>

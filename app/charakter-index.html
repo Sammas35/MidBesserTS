@@ -1,0 +1,19 @@
+<h1>Charktere:</h1>
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-2">
+            <div class="row">
+                <div class="table-bordered" ng-repeat="charakter in $ctrl.playerData.charakterList">
+                    <div ng-click="$ctrl.setCurrentCharakter(charakter)">{{charakter.name}}({{charakter.grad}})</div>
+                </div>
+            </div>
+            <div class="row">
+                <button ng-click="$ctrl.save()" class="fbsmallbutton">Speichern</button>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <charakter-detail ng-if="$ctrl.currentCharakter" charakter="$ctrl.currentCharakter"></charakter-detail>
+        </div>
+    </div>
+</div>

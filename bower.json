@@ -1,0 +1,23 @@
+{
+  "name": "mid-besser",
+  "description": "Midgard Verbesserung",
+  "version": "1.0.0",
+  "homepage": "",
+  "license": "MIT",
+  "cwd": "app",
+  "directory": "components",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-animate": "1.5.x",
+    "angular-mocks": "1.5.x",
+    "angular-resource": "1.5.x",
+    "angular-route": "^1.5.0",
+    "angular-translate": "2.4.2",
+    "angular-translate-loader-url": "2.4.2",
+    "bootstrap": "~3.1.1",
+    "es6-module-loader": "^0.17.10",
+    "jquery": "^2.2.0",
+    "lodash": "*",
+    "ngstorage": "~0.3.9"
+  }
+}
