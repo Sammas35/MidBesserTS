@@ -16,6 +16,13 @@ export class Charakter implements ICharakter {
     waffen:Array<IWaffe>;
     lernen:Array<Lernfaehigkeit>;
 
+
+    constructor() {
+        this.faehigkeiten = [];
+        this.waffen = [];
+        this.lernen = [];
+    }
+
     addToLernListe(lernfaehigkeit:Lernfaehigkeit) {
         console.log('lerne ' + lernfaehigkeit.name);
         this.lernen.push(lernfaehigkeit);

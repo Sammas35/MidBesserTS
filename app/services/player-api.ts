@@ -27,6 +27,7 @@ export interface IPlayerData {
 export interface IPlayerApi {
     getPlayerData():IPlayerData
     savePlayerData(playerData:IPlayerData)
+    addCharakter(newname:string, newAbenteuerTyp:string):void;
 }
 
 
@@ -96,6 +97,19 @@ class LocalSoragePlayerApi implements IPlayerApi {
         var value = JSON.stringify(playerData);
         localStorage.setItem('midgard.besser.data', value);
     }
+
+    addCharakter(newname:string, newAbenteuerTyp:any):void {
+        let charakter:Charakter;
+
+        charakter = new Charakter();
+
+        charakter.name = newname;
+        charakter.abenteurerTyp = newAbenteuerTyp.name;
+        charakter.abenteurerTypKuerzel = newAbenteuerTyp.kuerzel;
+
+        this.playerData.charakterList.push(charakter);
+    }
+
 }
 
 const moduleName = 'appMidBesser.playerApi';

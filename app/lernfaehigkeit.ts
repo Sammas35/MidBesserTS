@@ -6,7 +6,6 @@ export class Lernfaehigkeit {
     public aktuell:number;
     public name:string;
     public gelernt:boolean;
-    public stufen:Array<Stufe>;
     private faehigkeit:IVerbesserung;
     private geplanteStufen:Array<Stufe>;
     private offeneStufen:Array<Stufe>;
@@ -17,7 +16,6 @@ export class Lernfaehigkeit {
         this.aktuell = null;
         this.faktor = neueFaehigkeit.berechneFaktor(kuerzel);
         this.faehigkeit = neueFaehigkeit;
-        this.stufen = [];
         this.geplanteStufen = [];
         this.offeneStufen = [];
 
@@ -31,6 +29,10 @@ export class Lernfaehigkeit {
             });
             this.offeneStufen = neueFaehigkeit.verbesserungen.slice(pos);
         }
+    }
+
+    public static deserialize(charakter:any):Lernfaehigkeit {
+        return null;
     }
 
     berechneGeplanteKosten():number{
