@@ -42,13 +42,22 @@ export class Charakter implements ICharakter {
         result.abenteurerTyp = charakter.abenteurerTyp;
         result.abenteurerTypKuerzel = charakter.abenteurerTypKuerzel;
         result.grad = charakter.grad;
+
         result.staerke = charakter.staerke;
         result.geschicklichkeit = charakter.geschicklichkeit;
         result.konstitution = charakter.konstitution;
         result.intelligenz = charakter.intelligenz;
         result.zaubertalent = charakter.zaubertalent;
+
         result.faehigkeiten = charakter.faehigkeiten ? charakter.faehigkeiten.slice() : [];
-        result.lernen = charakter.lernen ? charakter.lernen.slice() : [];
+
+        if(charakter.lernen){
+            result.lernen = charakter.lernen.map((lernfaehigkeit)=> {
+                return Lernfaehigkeit.deserialize(lernfaehigkeit);
+            });
+        }else{
+            result.lernen = []
+        }
 
         return result;
     }

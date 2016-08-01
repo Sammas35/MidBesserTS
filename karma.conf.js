@@ -3,21 +3,21 @@
 module.exports = function (config) {
     config.set({
         // base path, that will be used to resolve files and exclude
-        basePath: './',
+        basePath: './app',
 
         // frameworks to use
         frameworks: ['systemjs', 'jasmine'],
 
         systemjs: {
             // Path to ths SystemJS configuration file
-            configFile: './app/config.js',
+            configFile: './config.js',
             // modules to be loaded in the browser
             serveFiles: [
                 'node_modules/jquery/dist/jquery.js',
                 'node_modules/angular/angular.js',
                 'node_modules/angular-route/angular-route.js',
                 'node_modules/angular-mocks/angular-mocks.js',
-                'app/**/*.ts'
+                '**/*.ts'
             ],
 
             config: {
@@ -33,8 +33,8 @@ module.exports = function (config) {
 
         // // list of files / patterns to execute in the browser
         files: [
-            'app/*spec.ts',
-            'app/**/*spec.ts'
+            '*spec.ts',
+            '**/*spec.ts'
         ],
 
         // list of files to exclude
@@ -71,6 +71,7 @@ module.exports = function (config) {
             'karma-systemjs',
             'karma-chrome-launcher',
             'karma-firefox-launcher',
+            'karma-phantomjs-launcher',
             'karma-jasmine',
             'karma-junit-reporter',
             'karma-coverage'

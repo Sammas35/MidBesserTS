@@ -26,6 +26,7 @@ class CharakterVerbessern {
         console.log('CharakterVerbessern playerData', this.playerData, $routeParams.charakter);
         this.charakter = this.getCharakterByName($routeParams.charakter);
 
+        console.log("geladener Charakter", this.charakter);
         this.loadFaehigkeiten();
         this.loadWaffen();
     }
@@ -70,14 +71,16 @@ class CharakterVerbessern {
         });
 
 
-        this.charakter.faehigkeiten = this.charakter.faehigkeiten || [];
-        this.faehigkeiten.forEach((faehigkeit:IVerbesserung)=> {
-            if (!this.charakter.faehigkeiten.some((gelernteFaehigkeit)=> {
-                    gelernteFaehigkeit.name === faehigkeit.name
-                })) {
-                this.offeneFaehigkeiten.push(faehigkeit);
-            }
-        });
+        if(this.charakter) {
+            this.charakter.faehigkeiten = this.charakter.faehigkeiten || [];
+            this.faehigkeiten.forEach((faehigkeit:IVerbesserung)=> {
+                if (!this.charakter.faehigkeiten.some((gelernteFaehigkeit)=> {
+                        gelernteFaehigkeit.name === faehigkeit.name
+                    })) {
+                    this.offeneFaehigkeiten.push(faehigkeit);
+                }
+            });
+        }
     }
 
     private initWaffen(data:Array<IWaffengrundkenntnis>):void {

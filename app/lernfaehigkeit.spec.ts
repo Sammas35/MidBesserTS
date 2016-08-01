@@ -1,9 +1,9 @@
 import * as angular from 'angular-mocks'
 
-import {Lernfaehigkeit} from "./lernfaehigkeit";
+import {Lernfaehigkeit} from "./lernfaehigkeit.ts";
 
 describe('Lernfaehigkeit', function () {
-    beforeEach(angular.module('appMidBesser'));
+    // beforeEach(angular.module('appMidBesser'));
 
     it('simple', ()=> {
         expect(true).toBe(true)
@@ -58,12 +58,27 @@ describe('Lernfaehigkeit', function () {
             }
         }
 
+        it("should exist", ()=>{
+            expect(Lernfaehigkeit.deserialize).toBeDefined();
+        });
+
         it('should deserialize flat properties', ()=> {
             let lernfaehigkeit:Lernfaehigkeit;
             let input = createInput();
+
             lernfaehigkeit = Lernfaehigkeit.deserialize(input);
+            console.log("lernfaehigkeit", lernfaehigkeit);
 
             expect(lernfaehigkeit.name).toBe('beidhändiger Kampf');
+            expect(lernfaehigkeit.aktuell).toBeNull();
+            expect(lernfaehigkeit.faktor).toBe(0.5);
+            expect(lernfaehigkeit.faehigkeit).toBeDefined();
+            expect(lernfaehigkeit.faehigkeit.name).toBe('beidhändiger Kampf');
+
+            expect(lernfaehigkeit.geplanteStufen.length).toBe(1);
+            expect(lernfaehigkeit.offeneStufen.length).toBe(2);
+
+            expect(lernfaehigkeit.gelernt).toBeFalsy();
         });
     });
 });
