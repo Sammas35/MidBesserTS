@@ -50,6 +50,14 @@ class CharakterVerbessern {
         }
     }
 
+    public getCostSum(){
+        let sum = 0;
+        this.charakter.lernen.forEach((lernfaehigkeit:Lernfaehigkeit)=> {
+            sum += lernfaehigkeit.berechneGeplanteKosten();
+        });
+        return sum;
+    }
+
     private entferneLernfaehigkeit(lernfaehigkeit:Lernfaehigkeit) {
         this.charakter.entferneLernfaehigkeit(lernfaehigkeit);
     }
